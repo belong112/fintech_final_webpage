@@ -20,12 +20,12 @@ const invest = () => {
     <div className={styles.root}>
       <div className={styles.displayBox}>
         <Typography className={styles.title} variant="h1">
-          Give me a Title
+          智慧投資機器人
         </Typography>
       </div>
       <div className={styles.displayBox}>
         <FormControl className={styles.formControl}>
-          <InputLabel>請選擇你的風險程度</InputLabel>
+          <InputLabel>請選擇你偏好的的風險程度</InputLabel>
           <Select
             id="demo-simple-select"
             labelId="demo-simple-select-label"
