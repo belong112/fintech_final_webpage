@@ -10,7 +10,7 @@ import {
   TablePagination,
   TableRow,
 } from "@material-ui/core";
-import styles from "./myTable.module.css";
+import styles from "./mytable.module.css";
 
 // self-defined-components
 const columns = [
