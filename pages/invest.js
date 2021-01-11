@@ -7,20 +7,26 @@ import {
   Select,
 } from "@material-ui/core";
 import styles from "../styles/test.module.css";
+import investDataSet from "./data/investDataSet";
 
 // components
 import MyTable from "../components/MyTable";
 
 // self-defined-components
-
 const invest = () => {
   const [risk, setRisk] = useState("low");
+  const [investData, setInvestData] = useState({ data: [], totalProfit: 0 });
+
+  const handleOnChange = (e) => {
+    setRisk(e.target.value);
+    setInvestData(investDataSet[e.target.value]);
+  };
 
   return (
     <div className={styles.root}>
       <div className={styles.displayBox}>
         <Typography className={styles.title} variant="h1">
-          智慧投資機器人
+          Financial Advisory Bot
         </Typography>
       </div>
       <div className={styles.displayBox}>
@@ -30,16 +36,19 @@ const invest = () => {
             id="demo-simple-select"
             labelId="demo-simple-select-label"
             value={risk}
-            onChange={(e) => setRisk(e.target.value)}
+            onChange={(e) => handleOnChange(e)}
           >
             <MenuItem value={"low"}>低</MenuItem>
-            <MenuItem value={"middle"}>中</MenuItem>
+            <MenuItem value={"medium"}>中</MenuItem>
             <MenuItem value={"high"}>高</MenuItem>
           </Select>
         </FormControl>
       </div>
       <div className={styles.displayBox}>
-        <MyTable />
+        <MyTable
+          investData={investData["data"]}
+          totalProfit={investData["totalProfit"]}
+        />
       </div>
     </div>
   );
