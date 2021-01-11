@@ -13,7 +13,7 @@ import MyTable from "../components/MyTable";
 
 // self-defined-components
 
-const test = () => {
+const invest = () => {
   const [risk, setRisk] = useState("low");
 
   return (
@@ -45,4 +45,4 @@ const test = () => {
   );
 };
 
-export default test;
+export default invest;
