@@ -54,7 +54,7 @@ const investDataSet = {
       {
         firm: "2330台積電",
         investRatio: 0.09997,
-        expectedProfit: 0.00749375857284,
+        expectedProfit: 1.00749375857284,
       },
       {
         firm: "2303聯電",
