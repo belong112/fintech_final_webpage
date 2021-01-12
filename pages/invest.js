@@ -139,7 +139,7 @@ const investDataSet = {
       {
         firm: "2330台積電",
         investRatio: 0.157211,
-        expectedProfit: 0.00749375857284,
+        expectedProfit: 1.00749375857284,
       },
       {
         firm: "2303聯電",
@@ -224,7 +224,7 @@ const investDataSet = {
       {
         firm: "2330台積電",
         investRatio: 0.158361,
-        expectedProfit: 0.00749375857284,
+        expectedProfit: 1.00749375857284,
       },
       {
         firm: "2303聯電",
